@@ -13,7 +13,9 @@ require('./startup/config')();
 
 if (app.get('env') === 'production') require('./startup/prod')(app);
 
-const port = process.env.PORT || config.get('port');
+const port =
+  (app.get('env') === 'test' ? process.env.TEST_PORT : process.env.DEV_PORT) || config.get('port');
+
 const server = app.listen(port, () => winston.info(`Listening to port ${port}...`));
 
 module.exports = server;

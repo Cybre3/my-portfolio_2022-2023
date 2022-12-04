@@ -1,10 +1,12 @@
-const { config } = require('dotenv');
+require('dotenv').config();
 const express = require('express');
 const winston = require('winston');
 const morgan = require('morgan');
 const debug = require('debug')('app:startup');
 const { format } = winston;
 const { colorize, prettyPrint, label, combine, printf } = format;
+
+const screensRouter = require('../routes/total_screensRoute');
 
 const myFormat = printf(({ level, message }) => {
   return `${level}: ${message}`;
@@ -23,4 +25,6 @@ module.exports = function (app) {
       format: combine(label({ label: 'info' }), prettyPrint(), colorize(), myFormat),
     })
   );
+
+  app.use('/api/screens', screensRouter);
 };
