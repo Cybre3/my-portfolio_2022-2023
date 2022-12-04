@@ -1,5 +1,5 @@
 const request = require('supertest');
-const { Screen } = require('../../models/screensModel');
+const { Screen } = require('../../../models/screensModel');
 const mongoose = require('mongoose');
 
 let server;
@@ -7,7 +7,7 @@ let server;
 describe('/api/screens', () => {
   beforeEach(() => {
     process.env.NODE_ENV = 'test';
-    server = require('../../index');
+    server = require('../../../index');
   });
 
   afterEach(async () => {
@@ -43,7 +43,7 @@ describe('/api/screens', () => {
   });
 
   describe('GET /:id', () => {
-    it('return a screen if valid id passed', async () => {
+    it('should return a screen if valid id passed', async () => {
       const screen = new Screen({
         screen_name: 'example1',
         component: 'example1',
@@ -67,6 +67,85 @@ describe('/api/screens', () => {
       const res = await request(server).get(`/api/screens/${id}`);
 
       expect(res.status).toBe(404);
+    });
+  });
+
+  describe('POST /', () => {
+    let screen_name;
+    let component;
+
+    const exec = async () => {
+      return await request(server).post('/api/screens').send({ screen_name, component });
+    };
+
+    beforeEach(() => {
+      screen_name = 'example1';
+      component = 'example1';
+    });
+
+    it('should return 404 if screen already exists', async () => {
+      const newScreen = new Screen({
+        screen_name,
+        component,
+      });
+
+      await newScreen.save();
+
+      const res = await exec();
+
+      await Screen.find({ screen_name: res.body.screen_name });
+
+      expect(res.status).toBe(404);
+    });
+  });
+
+  describe('PUT /:id', () => {
+    let component;
+    let screen;
+    let newName;
+    let id;
+
+    const exec = async () => {
+      return await request(server)
+        .put(`/api/screens/${id}`)
+        .send({ screen_name: newName, component });
+    };
+
+    beforeEach(async () => {
+      screen = new Screen({
+        screen_name: 'example1',
+        component: 'example1',
+      });
+
+      await screen.save();
+
+      id = screen._id;
+      newName = 'updatedName';
+      component = screen.component;
+    });
+
+    it('should return 404 if Id is invalid', async () => {
+      id = 12;
+
+      const res = await exec();
+
+      expect(res.status).toBe(404);
+    });
+
+    it('should return 404 if screen with given id is not found', async () => {
+      id = mongoose.Types.ObjectId();
+
+      const res = await exec();
+
+      expect(res.status).toBe(404);
+    });
+
+    it('should update screen if input is valid', async () => {
+      await exec();
+
+      const updatedScreen = await Screen.findById(id);
+
+      expect(updatedScreen).toHaveProperty('screen_name', newName);
     });
   });
 });
