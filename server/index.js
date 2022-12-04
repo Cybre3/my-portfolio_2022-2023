@@ -10,6 +10,7 @@ require('./startup/cors')(app);
 require('./startup/appRoutes-appMiddleware')(app);
 require('./startup/db')(app);
 require('./startup/config')();
+require('./startup/apiValidation')();
 
 if (app.get('env') === 'production') require('./startup/prod')(app);
 
