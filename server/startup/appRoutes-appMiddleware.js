@@ -6,6 +6,8 @@ const debug = require('debug')('app:startup');
 const { format } = winston;
 const { colorize, prettyPrint, label, combine, printf } = format;
 
+const errors = require('../middleware/errorMiddleware');
+
 const screensRouter = require('../routes/total_screensRoute');
 
 const myFormat = printf(({ level, message }) => {
@@ -13,6 +15,7 @@ const myFormat = printf(({ level, message }) => {
 });
 
 module.exports = function (app) {
+  app.use(express.json());
   app.use(express.static('public'));
 
   if (app.get('env') === 'development' || app.get('env') === 'test') {
@@ -27,4 +30,5 @@ module.exports = function (app) {
   );
 
   app.use('/api/screens', screensRouter);
+  app.use(errors);
 };

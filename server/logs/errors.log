@@ -1,0 +1,24 @@
+
+--- request error ---
+[2022-12-03 10:26:15.498 PM] error connect ECONNREFUSED 127.0.0.1:27017
+stackMongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017
+    at Function.Model.$wrapCallback (C:\Users\cybre\Documents\portfolio-projects\my-portfolio\server\node_modules\mongoose\lib\model.js:5232:32)
+    at C:\Users\cybre\Documents\portfolio-projects\my-portfolio\server\node_modules\mongoose\lib\query.js:4914:21
+    at C:\Users\cybre\Documents\portfolio-projects\my-portfolio\server\node_modules\mongoose\lib\helpers\promiseOrCallback.js:41:5
+    at new Promise (<anonymous>)
+    at promiseOrCallback (C:\Users\cybre\Documents\portfolio-projects\my-portfolio\server\node_modules\mongoose\lib\helpers\promiseOrCallback.js:40:10)
+    at model.Query.exec (C:\Users\cybre\Documents\portfolio-projects\my-portfolio\server\node_modules\mongoose\lib\query.js:4913:10)
+    at model.Query.Query.then (C:\Users\cybre\Documents\portfolio-projects\my-portfolio\server\node_modules\mongoose\lib\query.js:4996:15)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+--- request error ---
+
+
+--- request error ---
+[2022-12-03 10:31:49.594 PM] error Cast to ObjectId failed for value "12" (type string) at path "_id" for model "total_screens"
+stackCastError: Cast to ObjectId failed for value "12" (type string) at path "_id" for model "total_screens"
+    at model.Query.exec (C:\Users\cybre\Documents\portfolio-projects\my-portfolio\server\node_modules\mongoose\lib\query.js:4897:21)
+    at model.Query.Object.<anonymous>.Query.then (C:\Users\cybre\Documents\portfolio-projects\my-portfolio\server\node_modules\mongoose\lib\query.js:4996:15)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+--- request error ---
+

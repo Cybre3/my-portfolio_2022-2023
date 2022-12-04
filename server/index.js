@@ -6,6 +6,7 @@ const winston = require('winston');
 
 const app = express();
 
+require('./startup/logging')();
 require('./startup/cors')(app);
 require('./startup/appRoutes-appMiddleware')(app);
 require('./startup/db')(app);
