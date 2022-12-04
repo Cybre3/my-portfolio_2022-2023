@@ -1,0 +1,5 @@
+{
+  "name": "My portfolio - Test",
+  "db": "mongodb://localhost/portfolio_test",
+  "port": 6000
+}

@@ -1,0 +1,4 @@
+{
+  "name": "My portfolio - Development",
+  "db": "mongodb://localhost/portfolio"
+}
