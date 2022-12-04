@@ -4,7 +4,8 @@ const Joi = require('joi');
 const screenSchema = new mongoose.Schema({
   screen_name: {
     type: String,
-    required: false,
+    required: true,
+    minLength: 0,
   },
   component: {
     type: String,
@@ -16,7 +17,7 @@ const Screen = mongoose.model('total_screens', screenSchema);
 
 function validateScreen(input) {
   const schema = Joi.object({
-    screen_name: Joi.string(),
+    screen_name: Joi.string().min(0).required(),
     component: Joi.string().required(),
   });
 
@@ -24,3 +25,4 @@ function validateScreen(input) {
 }
 
 exports.Screen = Screen;
+exports.validate = validateScreen;
