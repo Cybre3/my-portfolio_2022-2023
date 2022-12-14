@@ -1,23 +1,19 @@
 import React, { Component } from 'react';
 import MenuSelectItem from '../common/MenuSelectItem';
+import hexImage from '../../src/images/icons/SeekPng.com_storm-png_9639191.png';
 import './mainPage.css';
+import HexNameBadge from '../common/HexNameBadge';
 
 class MainPage extends Component {
   render() {
     return (
       <div id="mainPage-container">
-        <div className="hex-nameBadge">
-          <div className="hex">
-            <div className="image"></div>
-            <div className="part1"></div>
-            <div className="part2"></div>
-            <div className="part3"></div>
-          </div>
-          <div className="name-badge">
-            <div className="name">STARRIKA MCCLOUD</div>
-            <div className="sub-title">- Full Stack Developer -</div>
-          </div>
-        </div>
+        <HexNameBadge
+          className="mainPage-hexBadge"
+          hexImage={hexImage}
+          fullName={'STARRIKA MCCLOUD'}
+          role={'Full Stack Developer'}
+        />
         <div className="gradient-background"></div>
         <div className="gradient-background2"></div>
         <div className="mainPage-menuItems">

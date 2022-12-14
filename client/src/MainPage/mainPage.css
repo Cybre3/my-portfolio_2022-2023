@@ -55,12 +55,12 @@
 
 .menuSelect-item-container {
   background-color: black;
-  border-radius: 2px;
+  border-radius: 5px;
   color: white;
   display: flex;
   font-size: 22px;
   letter-spacing: 0.05em;
-  padding: 5px 20px 5px 10px;
+  padding: 6px 20px 6px 10px;
   position: relative;
   transform: skew(40deg);
   width: 280px;
@@ -70,7 +70,7 @@
   background-color: darkred;
   border: 1px solid white;
   cursor: pointer;
-  transform: scale(1.2) skew(45deg);
+  transform: scale(1.1) skew(45deg);
 }
 
 .menuSelect-innerText {
@@ -82,90 +82,6 @@
 }
 
 .hex-nameBadge {
-  align-items: center;
-  display: grid;
-  grid-template-columns: auto auto;
   left: 220px;
-  position: relative;
   top: 100px;
-}
-
-.name-badge {
-  align-self: flex-end;
-  background-color: black;
-  bottom: 5px;
-  color: white;
-  left: 98px;
-  padding: 18px 45px 18px 45px;
-  position: absolute;
-  text-align: center;
-  transform: skew(-35deg);
-  width: 420px;
-}
-
-.name,
-.sub-title {
-  transform: skew(35deg);
-}
-
-.name {
-  background: url('../assets/d392y7n-920dcf13-96bd-4974-a7b2-d03c0166d911.jpg') center center;
-  background-clip: text;
-  background-repeat: repeat;
-  color: #fff;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  font-size: 38px;
-  font-weight: bold;
-  margin: 0;
-  padding: 0;
-  -webkit-text-fill-color: transparent;
-}
-
-.sub-title {
-  font-size: 24px;
-  margin-left: 45px;
-}
-
-.hex {
-  width: fit-content;
-  position: relative;
-}
-
-.part1 {
-  border-right: 50px solid black;
-  border-top: 72px solid transparent;
-  border-bottom: 72px solid transparent;
-  float: left;
-  width: 0;
-}
-
-.part2 {
-  background-color: black;
-  float: left;
-  height: 145px;
-  width: 80px;
-}
-
-.part3 {
-  border-left: 50px solid black;
-  border-top: 72px solid transparent;
-  border-bottom: 72px solid transparent;
-  float: left;
-  width: 0;
-}
-
-.image {
-  background: url('../../src/images/icons/SeekPng.com_storm-png_9639191.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-  border-radius: 40%;
-  height: 100px;
-  left: 25px;
-  /* margin: auto; */
-  position: absolute;
-  top: 20px;
-  transform: scaleX(-1);
-  width: 120px;
-  z-index: 5;  
 }

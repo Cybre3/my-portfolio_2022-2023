@@ -1,0 +1,6 @@
+.hex-nameBadge {
+  align-items: center;
+  display: grid;
+  grid-template-columns: auto auto;
+  position: relative;
+}

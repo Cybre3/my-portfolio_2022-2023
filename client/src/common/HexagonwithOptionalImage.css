@@ -1,0 +1,38 @@
+.hex {
+  width: fit-content;
+  position: relative;
+}
+
+.part1 {
+  border-right: 50px solid black;
+  border-top: 72px solid transparent;
+  border-bottom: 72px solid transparent;
+  float: left;
+  width: 0;
+}
+
+.part2 {
+  background-color: black;
+  float: left;
+  height: 145px;
+  width: 80px;
+}
+
+.part3 {
+  border-left: 50px solid black;
+  border-top: 72px solid transparent;
+  border-bottom: 72px solid transparent;
+  float: left;
+  width: 0;
+}
+
+.image {
+  border-radius: 40%;
+  height: 100px;
+  left: 25px;
+  position: absolute;
+  top: 20px;
+  transform: scaleX(-1);
+  width: 120px;
+  z-index: 5;  
+}
