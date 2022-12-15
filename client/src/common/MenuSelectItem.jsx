@@ -1,4 +1,5 @@
 import React, { useRef } from 'react';
+import { NavLink } from 'react-router-dom';
 import useSound from 'use-sound';
 
 function MenuSelectItem(props) {
@@ -6,14 +7,14 @@ function MenuSelectItem(props) {
   let [play] = useSound(audio);
 
   return (
-    <div className="menuSelect-item-container" onMouseEnter={() => play()}>
+    <NavLink to={props.path} className="menuSelect-item-container" onMouseEnter={() => play()}>
       <div className="menuSelect-innerText">
         {props.innerText}
         <audio>
           <source src={audio} type="audio/wav" />
         </audio>
       </div>
-    </div>
+    </NavLink>
   );
 }
 

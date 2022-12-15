@@ -63,6 +63,7 @@
   letter-spacing: 0.05em;
   padding: 6px 20px 6px 10px;
   position: relative;
+  text-decoration: none;
   transform: skew(40deg);
   width: 280px;
 }
@@ -70,7 +71,6 @@
 .menuSelect-item-container:hover {
   background-color: darkred;
   border: 1px solid white;
-  cursor: pointer;
   transform: scale(1.1) skew(45deg);
 }
 

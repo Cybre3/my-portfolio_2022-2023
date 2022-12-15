@@ -17,12 +17,12 @@ class MainPage extends Component {
         <div className="gradient-background"></div>
         <div className="gradient-background2"></div>
         <div className="mainPage-menuItems">
-          <MenuSelectItem innerText="About Me" />
-          <MenuSelectItem innerText="Projects" />
-          <MenuSelectItem innerText="Technologies" />
-          <MenuSelectItem innerText="Resume" />
-          <MenuSelectItem innerText="Contact Me" />
-          <MenuSelectItem innerText="Interests" />
+          <MenuSelectItem innerText="About Me" path='/about-me' />
+          <MenuSelectItem innerText="Projects" path='/projects' />
+          <MenuSelectItem innerText="Technologies" path='/technologies' />
+          <MenuSelectItem innerText="Resume" path='/resume' />
+          <MenuSelectItem innerText="Contact Me" path='/contact-me' />
+          <MenuSelectItem innerText="Interests" path='/interests' />
         </div>
       </div>
     );
