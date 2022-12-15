@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import MenuSelectItem from '../common/MenuSelectItem';
-import hexImage from '../../src/images/icons/SeekPng.com_storm-png_9639191.png';
+import hexImage from '../assets/icons/brainIcon.png';
 import './mainPage.css';
-import HexNameBadge from '../common/HexNameBadge';
+import HexNameBadge from '../common/HexNameBadge/HexNameBadge';
 
 class MainPage extends Component {
   render() {

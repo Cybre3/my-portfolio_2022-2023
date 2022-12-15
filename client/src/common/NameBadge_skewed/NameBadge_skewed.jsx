@@ -1,5 +1,5 @@
 import React from 'react';
-import './NameBadge_skewed.css';
+import './nameBadge_skewed.css';
 
 function NameBadge(props) {
   return (

@@ -1,7 +1,7 @@
 import React from 'react';
-import Hexagon from '../common/HexagonwithOptionalImage';
-import NameBadge from '../common/NameBadge_skewed';
-import './HexNameBadge.css';
+import Hexagon from '../HexagonwithOptionalImage/HexagonwithOptionalImage';
+import NameBadge from '../NameBadge_skewed/NameBadge_skewed';
+import './hexNameBadge.css';
 
 function HexNameBadge(props) {
   return (

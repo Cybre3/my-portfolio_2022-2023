@@ -1,5 +1,5 @@
 import React from 'react';
-import './HexagonwithOptionalImage.css';
+import './hexagonwithOptionalImage.css';
 
 function HexagonwithOptionalImage(props) {
   return (

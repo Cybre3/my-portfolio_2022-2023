@@ -18,7 +18,8 @@
 }
 
 .name {
-  background: url('../assets/d392y7n-920dcf13-96bd-4974-a7b2-d03c0166d911.jpg') center center;
+  background: url('../../assets/Mainpage/background/assassinsCreedAnimusLoadingScreen.jpg') center
+    center;
   background-clip: text;
   background-repeat: repeat;
   color: #fff;
