@@ -1,6 +1,6 @@
 .name-badge {
   align-self: flex-end;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.484);
   border-radius: 5px;
   bottom: 5px;
   color: white;
@@ -18,18 +18,19 @@
 }
 
 .name {
-  background: url('../../assets/Mainpage/background/assassinsCreedAnimusLoadingScreen.jpg') center
+  /* background: url('../../assets/Mainpage/background/peakpx (3).jpg') center
     center;
   background-clip: text;
   background-repeat: repeat;
   color: #fff;
   -webkit-background-clip: text;
   -moz-background-clip: text;
+  -webkit-text-fill-color: transparent; */
+  color: rgb(186, 186, 186);
   font-size: 38px;
   font-weight: bold;
   margin: 0;
   padding: 0;
-  -webkit-text-fill-color: transparent;
 }
 
 .sub-title {

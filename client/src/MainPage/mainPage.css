@@ -1,6 +1,5 @@
 #mainPage-container {
-  background: url('../assets/Mainpage/background/assassinsCreedAnimusLoadingScreen.jpg') center
-    center;
+  background: url('../assets/Mainpage/background/—Pngtree—dark red abstract smoke cloud_1456489.png') center center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
@@ -14,8 +13,8 @@
     90deg,
     transparent,
     transparent 10px,
-    rgba(0, 0, 0, 0.284) 20px,
-    rgba(0, 0, 0, 0.288) 20px
+    rgba(155, 155, 155, 0.284) 20px,
+    rgba(215, 215, 215, 0.288) 20px
   );
   bottom: 0;
   height: 100vh;
@@ -31,8 +30,8 @@
     -90deg,
     transparent,
     transparent 10px,
-    rgba(0, 0, 0, 0.284) 20px,
-    rgba(0, 0, 0, 0.288) 20px
+    rgba(155, 155, 155, 0.284) 20px,
+    rgba(215, 215, 215, 0.288) 20px
   );
   bottom: 0;
   right: 0;
@@ -55,7 +54,8 @@
 }
 
 .menuSelect-item-container {
-  background-color: black;
+  background-color: rgb(0, 0, 0);
+  border: 1px solid rgb(132, 132, 132);
   border-radius: 5px;
   color: white;
   display: flex;
@@ -65,7 +65,7 @@
   position: relative;
   text-decoration: none;
   transform: skew(40deg);
-  width: 280px;
+  width: 320px;
 }
 
 .menuSelect-item-container:hover {

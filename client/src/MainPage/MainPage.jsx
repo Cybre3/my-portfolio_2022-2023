@@ -15,7 +15,7 @@ class MainPage extends Component {
           role={'Full Stack Developer'}
         />
         <div className="gradient-background"></div>
-        <div className="gradient-background2"></div>
+        {/* <div className="gradient-background2"></div> */}
         <div className="mainPage-menuItems">
           <MenuSelectItem innerText="About Me" path='/about-me' />
           <MenuSelectItem innerText="Projects" path='/projects' />

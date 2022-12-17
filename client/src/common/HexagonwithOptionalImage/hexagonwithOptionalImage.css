@@ -4,7 +4,7 @@
 }
 
 .part1 {
-  border-right: 50px solid black;
+  border-right: 50px solid rgba(0, 0, 0, 0.522);
   border-top: 72px solid transparent;
   border-bottom: 72px solid transparent;
   float: left;
@@ -12,14 +12,14 @@
 }
 
 .part2 {
-  background-color: black;
+  background-color: rgb(0, 0, 0);
   float: left;
   height: 145px;
   width: 80px;
 }
 
 .part3 {
-  border-left: 50px solid black;
+  border-left: 50px solid rgba(0, 0, 0, 0.522);
   border-top: 72px solid transparent;
   border-bottom: 72px solid transparent;
   float: left;
