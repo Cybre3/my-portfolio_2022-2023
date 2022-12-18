@@ -1,0 +1,84 @@
+#technologies-container {
+  background: url('../assets/Technologies/background/nasa-Q1p7bh3SHj8-unsplash.jpg') center center;
+  background-repeat: no-repeat;
+  background-size: 160% 150%;
+  background-position: 100% 90%;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  z-index: -1;
+}
+
+#technologies-container::after {
+  background-color: rgba(0, 0, 0, 0.432);
+  content: ' ';
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+}
+
+.techno-outer-circle {
+  height: 65%;
+  margin-top: 50px;
+  width: 45%;
+}
+
+.techno-inner-circle {
+  /* background-color: rgb(40, 40, 40); */
+  /* background-color: white; */
+  background: url('../assets/Technologies/mern-stack.png') center center;
+  background-repeat: no-repeat;
+  background-size: 230% 130%;
+  background-position: 50% 45%;
+  border-radius: 50%;
+  color: white;
+  /*  display: flex;
+  flex-direction: column; */
+  height: 200px;
+  margin-top: 200px;
+  position: absolute;
+  text-align: center;
+  width: 200px;
+}
+
+.techno-tools-chest {
+  bottom: 0;
+  height: 100px;
+  position: absolute;
+  width: 150px;
+}
+
+.techno-basics-image {
+  margin: 2px 0 0 -10px;
+  width: 100px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .techno-outer-circle:not(.techno-outer-circle > div) {
+    animation: techno-spin infinite 30s linear;
+  }
+  .techno-basics-image {
+    animation: techno-spin-reverse infinite 45s linear;
+  }
+}
+
+@keyframes techno-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes techno-spin-reverse {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}

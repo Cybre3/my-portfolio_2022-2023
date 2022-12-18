@@ -15,12 +15,12 @@ function Projects(props) {
     <div id="projects-container">
       <div className="nav-menu-container">
         <NavMenuLink path="/" menuName="HOME" />
-        <NavMenuLink path="/" menuName="ABOUT ME" />
+        <NavMenuLink path="/about-me" menuName="ABOUT ME" />
         <NavMenuLink path="/projects" menuName="PROJECTS" />
-        <NavMenuLink path="/" menuName="TECHNOLOGIES" />
-        <NavMenuLink path="/" menuName="RESUME" />
-        <NavMenuLink path="/" menuName="CONTACT ME" />
-        <NavMenuLink path="/" menuName="INTERESTS" />
+        <NavMenuLink path="/technologies" menuName="TECHNOLOGIES" />
+        <NavMenuLink path="/resume" menuName="RESUME" />
+        <NavMenuLink path="/contact-me" menuName="CONTACT ME" />
+        <NavMenuLink path="/interests" menuName="INTERESTS" />
       </div>
       <div className="project-category-container">
         <CategoryContainer categoryPic={simpleDragon} title="SIMPLE" />
