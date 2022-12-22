@@ -8,7 +8,7 @@ class TypeAnimationUnderConstruction extends React.PureComponent {
         sequence={[
           'This portfolio',
           2000,
-          'is currently undergoing reconstruction.',
+          'is currently undergoing construction.',
           2000,
           'Please check in regularly',
           2000,
