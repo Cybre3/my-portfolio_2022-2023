@@ -1,37 +1,49 @@
-import React, { useState, useRef } from 'react';
+import React, { useState } from 'react';
 import $ from 'jquery';
+
+import ToolBoxBar from './ToolBoxBar';
+import TechnoNav from './TechnoNav';
+import ToolBox from './ToolBox';
+import TechCircleContainer from './TechCircleContainer';
+import ExitToMenuButton from './ExitToMenuButton';
+
 import './technologies.css';
-import PicsOuterCircle from './PicsOuterCircle';
-import PicsInnerCircle from './PicsInnerCircle';
 
 function Technologies(props) {
   const [show, setShow] = useState(false);
-  const vid = useRef(null);
 
   $(document).ready(function () {
-    $('.techno-tools-chest').on('click', () => {
-      $('.techno-chest-video').trigger('play');
-    });
+    $('.logo-outer-circle').hover(
+      function () {
+        $('.right').show();
+      },
+      function () {
+        $('.right').hide();
+      }
+    );
+
+    $('.logo-inner-circle').hover(
+      function () {
+        $('.left').show();
+      },
+      function () {
+        $('.left').hide();
+      }
+    );
+
+    $('.tool-box-logo').hover(
+      function () {
+        $('.bottom').show();
+      },
+      function () {
+        $('.bottom').hide();
+      }
+    );
   });
 
   return (
     <div id="technologies-container">
-      <div className="tech-circle-container">
-        {/* <img
-          src={require('../assets/Technologies/techno-mandala.png')}
-          alt=""
-          className="techno-outer-circle-mandala"
-        /> */}
-        <div className="techno-inner-circle">
-          <img
-            className="techno-basics-image"
-            src={require('../assets/Technologies/html-css-js-logo.png')}
-            alt=""
-          />
-        </div>
-        <PicsOuterCircle />
-        <PicsInnerCircle />
-      </div>
+      <TechCircleContainer />
       <div className="techno-info-box right">
         <h2>Technology Icon Title</h2>
         <p>Some Mumbo jumbo about technology icon</p>
@@ -40,78 +52,14 @@ function Technologies(props) {
         <h2>Technology Icon Title</h2>
         <p>Some Mumbo jumbo about technology icon</p>
       </div>
-      <div className="tool-box" style={{ display: show ? 'flex' : 'none' }}>
-        <img
-          className="tool-box-logo"
-          src={require('../assets/Technologies/logos/mongodb-logo.png')}
-          alt=""
-        />
-        <img
-          className="tool-box-logo"
-          src={require('../assets/Technologies/logos/mongodb-logo.png')}
-          alt=""
-        />
-        <img
-          className="tool-box-logo"
-          src={require('../assets/Technologies/logos/mongodb-logo.png')}
-          alt=""
-        />
-        <img
-          className="tool-box-logo"
-          src={require('../assets/Technologies/logos/mongodb-logo.png')}
-          alt=""
-        />
-        <img
-          className="tool-box-logo"
-          src={require('../assets/Technologies/logos/mongodb-logo.png')}
-          alt=""
-        />
-        <img
-          className="tool-box-logo"
-          src={require('../assets/Technologies/logos/mongodb-logo.png')}
-          alt=""
-        />
-        <img
-          className="tool-box-logo"
-          src={require('../assets/Technologies/logos/mongodb-logo.png')}
-          alt=""
-        />
-        <img
-          className="tool-box-logo"
-          src={require('../assets/Technologies/logos/mongodb-logo.png')}
-          alt=""
-        />
-        <img
-          className="tool-box-logo"
-          src={require('../assets/Technologies/logos/mongodb-logo.png')}
-          alt=""
-        />
-        <img
-          className="tool-box-logo"
-          src={require('../assets/Technologies/logos/mongodb-logo.png')}
-          alt=""
-        />
+      <div className="techno-info-box bottom">
+        <h2>Technology Icon Title</h2>
+        <p>Some Mumbo jumbo about technology icon</p>
       </div>
-      <img
-        src={require('../assets/Technologies/techno-tools-chest.png')}
-        alt=""
-        className="techno-tools-chest"
-        onClick={() => setShow(show === false ? true : false)}
-      />
-      <video ref={vid} className="techno-chest-video" style={{ display: show ? 'block' : 'none' }}>
-        <source
-          src={require('../assets/Technologies/tools-chest-animation.mp4')}
-          type="video/mp4"
-        />
-      </video>
-      <div className="techno-nav-icons">
-        <div className="techno-nav-icon">1</div>
-        <div className="techno-nav-icon">2</div>
-        <div className="techno-nav-icon">3</div>
-        <div className="techno-nav-icon">4</div>
-        <div className="techno-nav-icon">5</div>
-      </div>
-      <div className="exit-to-menu-button">BACK TO MENU</div>
+      <ToolBoxBar show={show} />
+      <ToolBox show={show} setShow={setShow} />
+      <TechnoNav />
+      <ExitToMenuButton />
     </div>
   );
 }

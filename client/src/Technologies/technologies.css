@@ -3,9 +3,6 @@
   background: url('../assets/Technologies/background/graham-holtshausen-fUnfEz3VLv4-unsplash.jpg')
     center center;
   background-repeat: no-repeat;
-  /* background-size: 160% 150%;
-  background-position: 100% 90%; */
-  /* background-position: center; */
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -25,8 +22,11 @@
   z-index: -1;
 }
 
+.techno-outer-circle-mandala {
+  opacity: 0.1;
+}
+
 .tech-circle-container {
-  /* background-color: white; */
   align-items: center;
   display: flex;
   height: 520px;
@@ -36,16 +36,26 @@
   width: 520px;
 }
 
-/* .techno-outer-circle-mandala {
-  transform: rotate(-6deg);
-  width: 55%;
+.tech-circle-container::before {
+  background: url('../assets/background/bluetech-circle.png') center center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: cover;
+  bottom: 0;
+  content: "";
+  left: 0;
+  opacity: 0.9;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 0;
 }
- */
+
+.techno-outer-circle-mandala {
+  animation: techno-spin infinite 700s linear;
+}
+
 .techno-inner-circle {
-  /* background: url('../assets/Technologies/mern-stack.png') center center; */
-  /* background-repeat: no-repeat;
-  background-size: 230% 130%;
-  background-position: 50% 45%; */
   border-radius: 50%;
   height: 200px;
   position: absolute;
@@ -53,13 +63,14 @@
 }
 
 .techno-basics-image {
-  background: linear-gradient(rgba(125, 86, 223, 0.599), rgba(52, 104, 173, 0.597));
+  /* background: linear-gradient(rgba(125, 86, 223, 0.599), rgba(52, 104, 173, 0.597)); */
   border-radius: 50%;
   margin: 2px 0 0 0;
   width: 200px;
 }
 
 .pics-outer-circle {
+  /* align-items: center; */
   border: 2px solid rgba(255, 255, 255, 0.362);
   border-radius: 50%;
   height: 520px;
@@ -97,8 +108,8 @@
 }
 
 .tool-box {
+  animation: slide 200s ease infinite;
   align-items: center;
-  /* background-color: rgb(51, 51, 184); */
   border-style: solid;
   border-width: 3px;
   border-image: linear-gradient(to right, rgba(125, 86, 223, 0.599), rgba(52, 104, 173, 0.597));
@@ -107,30 +118,28 @@
   display: flex;
   flex-direction: row;
   height: 0;
-  justify-content: center;
-  /* overflow: hidden; */
-  margin: 0 auto;
   padding: 0 20px;
   position: absolute;
-  width: 100%;
+  width: fit-content;
+}
+
+.tool-box:hover {
+  animation-play-state: paused;
 }
 
 .tool-box-logo {
-  animation: slide 40s ease-out infinite;
-  /* background-color: blue; */
-  /* left: 0; */
-  /* top: -30px; */
-  /* margin-top: -40px; */
-  margin: 0 80px;
+  border-radius: 20%;
   bottom: 135px;
-  /* position: absolute; */
+  margin: 0 50px;
   width: 40px;
 }
 
 .techno-tools-chest {
   bottom: 0;
+  cursor: pointer;
   height: 100px;
   position: fixed;
+  right: 300px;
   width: 150px;
 }
 
@@ -139,49 +148,60 @@
   bottom: 0;
   height: 100px;
   position: fixed;
+  right: 300px;
   width: 150px;
 }
 
 .techno-nav-icons {
-  /* align-content: center; */
-  background-color: black;
   bottom: 0;
   color: white;
   display: grid;
-  grid-template-columns: repeat(5, auto);
-  gap: 10px;
-  height: 60px;
-  /* justify-items: center; */
+  grid-template-columns: repeat(5, 50px);
+  gap: 30px;
+  height: 65px;
   left: 0;
+  margin: 0 0 20px 40px;
   padding: 10px;
   position: absolute;
   text-align: center;
-  width: 600px;
+  width: fit-content;
 }
 
 .techno-nav-icon {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  background-color: blue;
+  background-color: rgba(255, 255, 255, 0.464);
+  border-radius: 50%;
+  margin: 5px;
+  width: 50px;
+}
+
+.techno-nav-icon:hover {
+  /* border: 2px double whitesmoke; */
+  transform: scale(1.1);
+  padding: 5px;
 }
 
 .exit-to-menu-button {
-  background-color: blue;
-  border: 10px solid black;
+  align-items: center;
   bottom: 0;
   color: white;
-  height: 50px;
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  margin: 0 50px 20px 0;
   position: absolute;
   right: 0;
-  margin: 0 80px 20px 0;
   text-align: center;
-  width: 80px;
+  text-decoration: none;
+  width: fit-content;
+}
+
+.exit-to-menu-button > img {
+  width: 65px;
 }
 
 .techno-info-box {
-  background-color: rgba(255, 255, 255, 0.5);
-  border-radius: 20%;
+  background-color: rgba(255, 255, 255, 0.633);
+  border-radius: 22%;
   color: black;
   height: 250px;
   margin-top: 100px;
@@ -193,6 +213,7 @@
 
 .techno-info-box > h2 {
   margin-bottom: 20px;
+  padding: 15px;
 }
 
 .techno-info-box > p {
@@ -200,15 +221,36 @@
 }
 
 .right {
-  border: 10px double rgb(96, 0, 128);
+  border: 10px double rgba(0, 249, 249, 0.601);
+  display: none;
   margin-right: 80px;
   right: 0;
 }
 
 .left {
-  border: 10px double rgb(20, 77, 184);
+  border: 10px double rgb(198, 142, 0);
+  display: none;
   left: 0;
   margin-left: 80px;
+}
+
+.bottom {
+  border: 10px double black;
+  bottom: 0;
+  display: none;
+  height: 80px;
+  padding: 15px;
+  width: 450px;
+}
+
+.bottom[style*='display: block'] {
+  align-items: center;
+  display: flex !important;
+  flex-direction: row;
+}
+
+.bottom > p {
+  border-left: 3px solid black;
 }
 
 
@@ -292,6 +334,11 @@
   animation: pic-spin-reverse-outer-315 infinite 90s linear;
 }
 
+
+
+
+
+
 @media (prefers-reduced-motion: no-preference) {
   /* .techno-outer-circle-mandala:not(.techno-outer-circle > div) {
     animation: techno-spin-mandala infinite 100s linear;
@@ -309,10 +356,13 @@
 
 @keyframes slide {
   0% {
-    transform: translate3d(1700px, 0, 0);
+    transform: translate3d(1500px, 0, 0);
+  }
+  50% {
+    transform: translate3d(-1500px, 0, 0); /* The image width */
   }
   100% {
-    transform: translate3d(-1690px, 0, 0); /* The image width */
+    transform: translate3d(1500px, 0, 0); /* The image width */
   }
 }
 
@@ -351,6 +401,7 @@
     transform: rotate(0deg) translate(175px) rotate(360deg);
   }
 }
+
 @keyframes pic-spin-reverse-deg-90 {
   0% {
     transform: rotate(90deg) translate(175px) rotate(-90deg);
@@ -359,6 +410,7 @@
     transform: rotate(90deg) translate(175px) rotate(90deg);
   }
 }
+
 @keyframes pic-spin-reverse-deg-180 {
   0% {
     transform: rotate(180deg) translate(175px) rotate(-180deg);
@@ -367,6 +419,7 @@
     transform: rotate(180deg) translate(175px) rotate(180deg);
   }
 }
+
 @keyframes pic-spin-reverse-deg-270 {
   0% {
     transform: rotate(272deg) translate(175px) rotate(-274deg);
@@ -384,6 +437,7 @@
     transform: rotate(0deg) translate(260px) rotate(-383deg);
   }
 }
+
 @keyframes pic-spin-reverse-outer-45 {
   0% {
     transform: rotate(45deg) translate(260px) rotate(-68deg);
@@ -392,6 +446,7 @@
     transform: rotate(45deg) translate(260px) rotate(-428deg);
   }
 }
+
 @keyframes pic-spin-reverse-outer-90 {
   0% {
     transform: rotate(90deg) translate(260px) rotate(-110deg);
@@ -400,6 +455,7 @@
     transform: rotate(90deg) translate(260px) rotate(-473deg);
   }
 }
+
 @keyframes pic-spin-reverse-outer-135 {
   0% {
     transform: rotate(135deg) translate(260px) rotate(-150deg);
@@ -408,6 +464,7 @@
     transform: rotate(135deg) translate(260px) rotate(-518deg);
   }
 }
+
 @keyframes pic-spin-reverse-outer-180 {
   0% {
     transform: rotate(180deg) translate(260px) rotate(-200deg);
@@ -416,6 +473,7 @@
     transform: rotate(180deg) translate(260px) rotate(-563deg);
   }
 }
+
 @keyframes pic-spin-reverse-outer-225 {
   0% {
     transform: rotate(225deg) translate(260px) rotate(-247deg);
@@ -424,6 +482,7 @@
     transform: rotate(225deg) translate(260px) rotate(-608deg);
   }
 }
+
 @keyframes pic-spin-reverse-outer-270 {
   0% {
     transform: rotate(272deg) translate(260px) rotate(-298deg);
@@ -432,6 +491,7 @@
     transform: rotate(272deg) translate(260px) rotate(-653deg);
   }
 }
+
 @keyframes pic-spin-reverse-outer-315 {
   0% {
     transform: rotate(315deg) translate(260px) rotate(-338deg);
