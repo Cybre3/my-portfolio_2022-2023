@@ -1,0 +1,17 @@
+.under-construct-container {
+  align-items: center;
+  border-radius: 25px;
+  display: flex;
+  height: 400px;
+  position: absolute;
+  right: 10px;
+  text-align: center;
+  width: 800px;
+}
+
+.construct-text {
+  color: white;
+  font-size: 3rem;
+  margin: auto;
+  width: 100%;
+}

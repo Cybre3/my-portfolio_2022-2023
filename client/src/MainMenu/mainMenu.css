@@ -13,8 +13,8 @@
     90deg,
     transparent,
     transparent 10px,
-    rgba(155, 155, 155, 0.284) 20px,
-    rgba(215, 215, 215, 0.288) 20px
+    rgba(215, 215, 215, 0.288) 20px,
+    gold 20px
   );
   bottom: 0;
   height: 100vh;
@@ -48,9 +48,9 @@
   /* grid-template-columns: auto; */
   grid-template-rows: repeat(auto-fill, auto);
   grid-gap: 10px;
-  left: 300px;
+  left: 250px;
   position: absolute;
-  top: 300px;
+  top: 325px;
 }
 
 .menuSelect-item-container {
@@ -83,6 +83,6 @@
 }
 
 .hex-nameBadge {
-  left: 220px;
-  top: 100px;
+  left: 175px;
+  top: 75px;
 }
