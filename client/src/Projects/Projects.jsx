@@ -23,9 +23,21 @@ function Projects(props) {
         <NavMenuLink path="/interests" menuName="INTERESTS" />
       </div>
       <div className="project-category-container">
-        <CategoryContainer categoryPic={simpleDragon} title="SIMPLE" />
-        <CategoryContainer categoryPic={intermediateDragon} title="INTERMEDIATE" />
-        <CategoryContainer categoryPic={purpleDragon} title="CAPSTONE" />
+        <CategoryContainer
+          categoryPic={simpleDragon}
+          title="SIMPLE"
+          linkTo="/projects/simple-projects"
+        />
+        <CategoryContainer
+          categoryPic={intermediateDragon}
+          title="INTERMEDIATE"
+          linkTo="/projects/intermediate-projects"
+        />
+        <CategoryContainer
+          categoryPic={purpleDragon}
+          title="CAPSTONE"
+          linkTo="/projects/capstone-projects"
+        />
       </div>
       <div className="project-name-display">
         <ProjectNameDisplay />

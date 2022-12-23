@@ -4,7 +4,7 @@ import './categoryContainer.css';
 
 function CategoryContainer(props) {
   return (
-    <NavLink id="category-container">
+    <NavLink id="category-container" to={props.linkTo}>
       <h1 className="category-title">{props.title}</h1>
       <div className="category-description-container">
         <p className="category-description-text">
