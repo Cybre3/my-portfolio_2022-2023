@@ -1,6 +1,8 @@
 .simple-projects-background {
-  background: lightgray;
-  background-color: black;
+  background: url('../../assets/background/assassins_creed_2_wallpaper_by_motopaddy_d2qikj7.jpg') center center;
+  /* background-color: rgba(0, 0, 0, 0.881); */
+  background-repeat: no-repeat;
+  background-size: cover;
   color: white;
   display: flex;
   flex-direction: column;
@@ -12,36 +14,53 @@
 
 .projects-heading {
   align-self: flex-start;
+  color: darkred;
   font-size: 34px;
   margin: 20px 0 0 75px;
 }
 
 .projects-navbar {
   align-self: center;
-  border-top: 2px solid rgba(255, 255, 255, 0.671);
-  border-bottom: 2px solid rgba(255, 255, 255, 0.671);
+  border-top: 2px solid rgba(0, 0, 0, 0.671);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.671);
   padding: 4px 0;
   width: 90%;
 }
 
 .projects-navbar > a {
-  color: white;
+  color: black;
   padding: 5px 50px;
   text-decoration: none;
 }
 
 .projects-navbar > a:hover {
-  background-color: white;
-  color: black;
+  background-color: darkred;
+  color: white;
+}
+
+.simple-projects-title-description {  
+  display: none;
+  margin: 175px 0 0 75px;
+  position: absolute;
+}
+
+.simple-projects-title-description > h2 {
+  margin-bottom: 20px;
 }
 
 .project-preview {
   align-self: center;
   background-color: gray;
-  -webkit-box-shadow: 0px 0px 0px 5px #a0a0a0, inset 0px 10px 27px -8px #141414,
-    inset 0px -10px 27px -8px #facf41, 5px 5px 15px 5px rgba(0, 0, 0, 0);
-  box-shadow: 0px 0px 0px 5px #a0a0a0, inset 0px 10px 27px -8px #141414,
-    inset 0px -10px 27px -8px #facf41, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+  -webkit-box-shadow: 
+    0px 0px 0px 5px darkred, 
+    inset 0px 10px 27px -8px #141414,
+    inset 0px -10px 27px -8px black,
+    5px 5px 15px 5px rgba(0, 0, 0, 0);
+  box-shadow: 
+    0px 0px 0px 5px rgba(139, 0, 0, 0.804), 
+    inset 0px 10px 27px -8px #141414,
+    inset 0px -10px 27px -8px black, 
+    5px 5px 15px 5px rgba(0, 0, 0, 0);
   border-radius: 5px;
   box-shadow: outset 5px 15px;
   height: 300px;
@@ -88,8 +107,13 @@
   font-size: 2rem;
 }
 
+
+
+
+
+
 .carousel__face:nth-child(1) {
-  background-image: url('');
+  /* background-image: url(''); */
   transform: rotateY(0deg) translateZ(350px);
 }
 .carousel__face:nth-child(2) {
@@ -124,6 +148,10 @@
   background-image: url('../../assets/background/428749.jpg');
   transform: rotateY(320deg) translateZ(350px);
 }
+
+
+
+
 
 @keyframes rotate360 {
   from {
