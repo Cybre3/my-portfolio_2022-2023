@@ -21,14 +21,15 @@
 
 .projects-navbar {
   align-self: center;
-  border-top: 2px solid rgba(0, 0, 0, 0.671);
-  border-bottom: 2px solid rgba(0, 0, 0, 0.671);
+  border-top: 1px solid rgba(0, 0, 0, 0.671);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.671);
   padding: 4px 0;
   width: 90%;
 }
 
 .projects-navbar > a {
   color: black;
+  cursor: default;
   padding: 5px 50px;
   text-decoration: none;
 }
@@ -42,10 +43,18 @@
   display: none;
   margin: 175px 0 0 75px;
   position: absolute;
+  text-align: left;
 }
 
 .simple-projects-title-description > h2 {
-  margin-bottom: 20px;
+  margin-bottom: 5px;
+}
+
+.simple-projects-title-description > p {
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  padding: 2px 5px 15px 0;
+  width: 320px;
 }
 
 .project-preview {

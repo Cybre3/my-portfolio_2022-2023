@@ -11,10 +11,10 @@ function SimpleProjects(props) {
   $(document).ready(function () {
     $('.carousel__face').hover(
       function () {
-        $('.simple-projects-title-description').show();
+        $('.simple-projects-background > .simple-projects-title-description').show();
       },
       function () {
-        $('.simple-projects-title-description').hide();
+        $('.simple-projects-background > .simple-projects-title-description').hide();
       }
     );
   });

@@ -3,6 +3,7 @@ import MainMenu from './MainMenu/MainMenu';
 import Projects from './Projects/Projects';
 import Technologies from './Technologies/Technologies';
 import SimpleProjects from './Projects/SimpleProjects/SimpleProjects';
+import IntermediateProjects from './Projects/IntermediateProjects/IntermediateProjects';
 
 import './App.css';
 
@@ -15,7 +16,7 @@ function App() {
           <Route path="/about-me" element={<MainMenu />} />
           <Route path="/projects" element={<Projects />} />
           <Route exact path="/projects/simple-projects" element={<SimpleProjects />} />
-          <Route exact path="/projects/intermediate-projects" element={<Projects />} />
+          <Route exact path="/projects/intermediate-projects" element={<IntermediateProjects />} />
           <Route exact path="/projects/capstone-projects" element={<Projects />} />
           <Route path="/technologies" element={<Technologies />} />
           <Route path="/resume" element={<MainMenu />} />
