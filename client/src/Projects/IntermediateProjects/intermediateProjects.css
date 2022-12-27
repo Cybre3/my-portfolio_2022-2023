@@ -47,7 +47,9 @@
 
 .intermediate-projects-container .simple-projects-title-description {
   display: block;
-  margin: 250px 0 0 150px;
+  letter-spacing: 0.1em;
+  margin: 250px 0 0 200px;
+  transform: perspective(1000px) rotateY(60deg) scale(1.5);
 }
 
 .intermediate-projects-container .simple-projects-title-description > p {
@@ -133,9 +135,14 @@
 .projects-main-menu-items > a {
   background-color: rgb(91, 91, 91);
   color: white;
+  cursor: default;
   padding: 3px 15px;
   text-decoration: none;
   width: fit-content;
+}
+
+.projects-main-menu-items > a:hover{ 
+  transform: scale(1.1);
 }
 
 .intermediate-projects-container .exit-to-menu-button {
@@ -152,12 +159,19 @@
   background-size: cover;
   background-position: center; */
   align-self: flex-end;
-  -webkit-box-shadow: 0px 0px 0px 20px rgb(74, 74, 74), inset 0px 5px 17px -10px #ffffff,
-    inset 0px -5px 17px -10px rgb(255, 255, 255), 5px 5px 15px 5px rgba(0, 0, 0, 0);
-  box-shadow: 0px 0px 0px 20px rgb(74, 74, 74), inset 0px 5px 17px -10px #ffffff,
-    inset 0px -5px 17px -10px rgb(255, 255, 255), 5px 5px 15px 5px rgba(0, 0, 0, 0);
-  height: 250px;
-  margin: 100px 150px 0 0;
-  transform: perspective(2000px) rotateY(-35deg);
-  width: 400px;
+  -webkit-box-shadow: 
+    0px 0px 0px 10px rgba(0, 0, 0, 0.525), 
+    inset 0px 5px 17px 45px #000000,
+    inset 0px -5px 17px 45px rgb(0, 0, 0), 
+    5px 5px 15px 5px rgba(0, 0, 0, 0);
+  box-shadow: 
+    0px 0px 0px 10px rgba(0, 0, 0, 0.525), 
+    inset 0px 5px 17px 45px #000000,
+    inset 0px -5px 17px 45px rgb(0, 0, 0), 
+    5px 5px 15px 5px rgba(0, 0, 0, 0);
+  height: 200px;
+  margin: 150px 60px 0 0;
+  transform: perspective(2000px) rotateY(-65deg);
+  width: 420px;
 }
+

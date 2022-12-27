@@ -6,6 +6,8 @@ import ProjectsDescription from '../ProjectsDescription';
 import SimpleProjectsCarousel from '../SimpleProjectsCarousel';
 
 import './simpleProjects.css';
+import ProjectsMainMenuItems from '../ProjectsMainMenuItems';
+import ExitToMenuButton from './../../Technologies/ExitToMenuButton';
 
 function SimpleProjects(props) {
   $(document).ready(function () {
@@ -26,6 +28,8 @@ function SimpleProjects(props) {
       <ProjectsDescription />
       <div className="project-preview"></div>
       <SimpleProjectsCarousel />
+      <ProjectsMainMenuItems />
+      <ExitToMenuButton />
     </div>
   );
 }
