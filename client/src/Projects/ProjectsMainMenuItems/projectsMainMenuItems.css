@@ -1,0 +1,21 @@
+.projects-main-menu-items {
+  bottom: 0;
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  grid-column-gap: 10px;
+  margin: 0 0 20px 100px;
+  position: absolute;
+}
+
+.projects-main-menu-items > a {
+  background-color: rgb(91, 91, 91);
+  color: white;
+  cursor: default;
+  padding: 3px 15px;
+  text-decoration: none;
+  width: fit-content;
+}
+
+.projects-main-menu-items > a:hover{ 
+  transform: scale(1.1);
+}

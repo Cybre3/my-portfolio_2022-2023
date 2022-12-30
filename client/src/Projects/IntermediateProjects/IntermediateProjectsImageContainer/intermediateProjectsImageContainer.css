@@ -1,0 +1,40 @@
+.intermediate-projects-image-container {
+  margin-right: 30px;
+}
+
+.intermediate-projects-image {
+  border: 2px solid white;
+  border-radius: 1px;
+  box-sizing: border-box;
+  height: 100px;
+  position: relative;
+  width: 160px;
+}
+
+.inter-projs-image-title {
+  background-color: rgba(0, 0, 0, 0.479);
+  bottom: 5px;
+  padding: 1px 5px;
+  position: absolute;
+}
+
+.intermediate-image-select {
+  background-color: rgb(255, 238, 0);
+  display: none;
+  color: black;
+  margin-bottom: 2px;
+  padding: 5px;
+}
+
+.select-space {
+  background-color: lightgray;
+  border-left: 1px solid black;
+  border-radius: 3px;
+  border-right: 1px solid black;
+  color: black;
+  height: fit-content;
+  font-weight: bold;
+  margin: 0 5px;
+  padding: 0 3px 3px 3px;
+  text-align: center;
+}

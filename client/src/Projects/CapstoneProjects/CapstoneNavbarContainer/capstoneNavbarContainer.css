@@ -1,0 +1,97 @@
+.capstone-navbar-container {
+  display: grid;
+  grid-template-rows: repeat(2, auto);
+  position: fixed;
+  top: 0;
+  width: 100vw;
+}
+
+.capstone-navbar-icon {
+  margin: 5px 0 0 20px;
+  position: absolute;
+  width: 40px;
+}
+
+.capstone-navbar-container .projects-navbar {
+  background-color: rgba(0, 0, 0, 0.33);
+  border-top-color: none;
+  border-bottom-color: rgba(255, 255, 255, 0.567);
+  box-sizing: border-box;
+  padding: 15px 0 15px 65px;
+  position: initial;
+  width: 100%;
+  z-index: 0;
+}
+
+.capstone-navbar-container .projects-main-menu-items {
+  align-items: center;
+  background-color: rgba(96, 0, 0, 0.196);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.315);
+  font-size: 14px;
+  justify-content: flex-start;
+  padding: 7px 0 3px 70px;
+  position: initial;
+  margin: initial;
+}
+
+.capstone-navbar-container .projects-navbar > a {
+  color: white;
+  font-size: 18px;
+  padding: 5px 20px;
+  position: relative;
+}
+
+.capstone-navbar-container .projects-navbar > a:hover {
+  background-color: initial;
+  text-shadow: 0 0 5px #fff, 0 0 45px rgb(202, 148, 0),
+    0 0 55px rgb(202, 148, 0), 0 0 65px rgb(202, 148, 0), 0 0 80px rgb(202, 148, 0),
+    0 0 100px rgb(202, 148, 0);
+}
+
+.capstone-navbar-container .projects-navbar > a:hover::before {
+  border-bottom: 1px solid rgb(255, 251, 34);
+  bottom: 0;
+  content: ' ';
+  height: 100%;
+  left: 0;
+  margin: 0 auto;
+  padding: 5px 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 90%;
+  z-index: 1;
+}
+
+.capstone-navbar-container .projects-navbar > a:not(:nth-last-of-type(1)) {
+  border-right: 1px groove white;
+}
+
+.capstone-navbar-container .projects-main-menu-items > a {
+  background-color: initial;
+}
+
+.capstone-navbar-container .projects-main-menu-items > a:hover {
+  text-shadow: 0 0 5px #fff, 0 0 45px rgb(202, 148, 0),
+    0 0 55px rgb(202, 148, 0), 0 0 65px rgb(202, 148, 0), 0 0 80px rgb(202, 148, 0),
+    0 0 100px rgb(202, 148, 0);
+}
+
+.capstone-navbar-container .projects-main-menu-items > a:hover::before {
+  border-bottom: 1px solid rgb(255, 251, 34);
+  bottom: 0;
+  content: ' ';
+  height: 100%;
+  left: 0;
+  margin: 0 auto;
+  padding: 1px 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 90%;
+  z-index: 1;
+}
+
+.capstone-navbar-container .projects-main-menu-items > a:not(:nth-last-of-type(1)) {
+  border-right: 1px groove white;
+}

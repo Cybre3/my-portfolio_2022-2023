@@ -1,5 +1,6 @@
 import React from 'react';
-import backgroundImage from '../assets/ProjectContainer/background/louise-pilgaard-4muj7Br-O4U-unsplash.jpg';
+import backgroundImage from '../../../assets/ProjectContainer/background/louise-pilgaard-4muj7Br-O4U-unsplash.jpg';
+import './intermediateProjectsImageContainer.css';
 
 function ProjectsImageContainer(props) {
   return (

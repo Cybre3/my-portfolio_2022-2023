@@ -1,4 +1,5 @@
 import React from 'react';
+import './simpleProjectsCarousel.css';
 
 function SimpleProjectsCarousel(props) {
   return (

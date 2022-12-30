@@ -1,0 +1,17 @@
+.intermediate-projects-container .project-preview {
+  align-self: flex-end;
+  -webkit-box-shadow: 
+    0px 0px 0px 10px rgba(0, 0, 0, 0.525), 
+    inset 0px 5px 17px 45px #000000,
+    inset 0px -5px 17px 45px rgb(0, 0, 0), 
+    5px 5px 15px 5px rgba(0, 0, 0, 0);
+  box-shadow: 
+    0px 0px 0px 10px rgba(0, 0, 0, 0.525), 
+    inset 0px 5px 17px 45px #000000,
+    inset 0px -5px 17px 45px rgb(0, 0, 0), 
+    5px 5px 15px 5px rgba(0, 0, 0, 0);
+  height: 200px;
+  margin: 150px 60px 0 0;
+  transform: perspective(2000px) rotateY(-65deg);
+  width: 420px;
+}
