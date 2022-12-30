@@ -1,0 +1,104 @@
+.capstone-project-container {
+  display: flex;
+  grid-area: 'proj';
+  height: 500px;
+  width: 600px;
+}
+
+.capstone-project-info {
+  align-self: center;
+  background-color: rgba(0, 0, 0, 0.503);
+  border: 5px double rgba(155, 0, 0, 0.41);
+  height: 90%;
+  width: 45%;
+}
+
+.cap-right {
+  border-left: none !important;
+  order: 1;
+}
+
+.cap-left {
+  border-right: none !important;
+}
+
+.cap-right > h2,
+.cap-right > p {
+  text-align: right;
+}
+
+.capstone-project-title {
+  border-bottom: 1px solid rgba(155, 0, 0, 0.612);
+  padding: 10px 15px 20px;
+}
+
+.capstone-project-description {
+  font-size: 18px;
+  padding: 20px 10px;
+  /* text-align: center; */
+}
+
+.capstone-project-image-container {
+  /* align-items: center; */
+  background-color: rgba(0, 0, 0, 0.503);
+  border: 5px double rgba(155, 0, 0, 0.508);
+  border-radius: 2px;
+  border-top: none !important;
+  display: flex;
+  /* height: 100%; */
+  justify-content: center;
+  position: relative;
+  width: 55%;
+}
+
+.capstone-project-image-container::before,
+.capstone-project-image-container::after {
+  position: absolute;
+  width: 10px;
+  height: 5px;
+  content: '';
+}
+
+.capstone-project-image-container::before {
+  left: -5px;
+  top: 0;
+  border-left: 5px double rgba(155, 0, 0, 0.508);
+  border-top: 5px double rgba(155, 0, 0, 0.508);
+}
+.capstone-project-image-container::after {
+  right: -5px;
+  top: 0;
+  border-right: 5px double rgba(155, 0, 0, 0.508);
+  border-top: 5px double rgba(155, 0, 0, 0.508);
+}
+
+.capstone-proj-image {
+  background-color: rgba(108, 0, 0, 0.700);
+  border: 7px double rgba(202, 148, 0, 0.612);
+  border-bottom: none;
+  border-top: none;
+  height: 75%;
+  margin-top: -5px;
+  position: relative;
+  width: 90%;
+}
+
+.capstone-proj-image::after {
+  /* background: url('../../assets/background/peakpx\ \(5\).jpg') center center;
+  background-repeat: no-repeat;
+  background-size: cover; */
+  border-left: 146.5px solid transparent;
+  border-right: 146.5px solid transparent;
+  border-top: 100px solid rgba(108, 0, 0, 0.700);
+  bottom: -100px;
+  content: '';
+  height: 0;
+  left: 0;
+  position: absolute;
+  width: 0;
+}
+
+.capstone-proj-image > img {
+  height: 100%;
+  width: 100%;
+}

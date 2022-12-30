@@ -1,0 +1,55 @@
+.capstone-container {
+  align-items: center;
+  background: url('../../assets/ProjectContainer/background/wp2694502-gaming-background.jpg') center center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  perspective: 1000px;
+  position: fixed;
+  width: 100vw;
+}
+
+.capstone-container::after {
+  background: url('../../assets/ProjectContainer/background/e7223e207c972fa0d26a0c3615a07eec_t.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  content: '';
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0.2;
+  position: fixed;
+  z-index: -1;
+}
+
+.capstone-container::before {
+  background: url('../../assets/ProjectContainer/background/wp2694479-gaming-background.jpg') center center;
+  background-repeat: no-repeat;
+  background-size: 100% 75%;
+  -webkit-box-shadow: inset -50px -50px 50px 35px #281313cf, inset 50px 50px 50px 35px #281313cf;
+  box-shadow: inset -50px -50px 50px 35px #281313cf, inset 50px 50px 50px 35px #281313cf;
+  content: '';
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0.4;
+  position: fixed;
+  transform: rotateX(90deg) translateY(100px) translateZ(-245px);
+  z-index: -1;
+}
+
+.capstone-container .exit-to-menu-button {
+  font-size: 14px;
+  margin: 0 15px 10px 0;
+}
+
+.capstone-container .exit-to-menu-button > img {
+  width: 50px;
+}

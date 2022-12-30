@@ -3,11 +3,12 @@ import $ from 'jquery';
 
 import ProjectsNavbar from '../ProjectsNavbar';
 import ProjectsDescription from '../ProjectsDescription';
-import SimpleProjectsCarousel from '../SimpleProjectsCarousel';
+import SimpleProjectsCarousel from './SimpleProjectsCarousel/SimpleProjectsCarousel';
+import ProjectsMainMenuItems from './../ProjectsMainMenuItems/ProjectsMainMenuItems';
+import ExitToMenuButton from './../../Technologies/ExitToMenuButton';
 
 import './simpleProjects.css';
-import ProjectsMainMenuItems from '../ProjectsMainMenuItems';
-import ExitToMenuButton from './../../Technologies/ExitToMenuButton';
+
 
 function SimpleProjects(props) {
   $(document).ready(function () {
@@ -23,7 +24,7 @@ function SimpleProjects(props) {
 
   return (
     <div className="simple-projects-background">
-      <h1 className="projects-heading">PROJECTS</h1>
+      <h1 className="simple-projects-heading">PROJECTS</h1>
       <ProjectsNavbar />
       <ProjectsDescription />
       <div className="project-preview"></div>
