@@ -2,7 +2,7 @@ import React from 'react';
 
 function ToolBoxBar(props) {
   return (
-    <div className="tool-box" style={{ display: props.show ? 'flex' : 'none' }}>
+    <div className="tool-box-logo-container" style={{ display: props.show ? 'flex' : 'none' }}>
       <img
         className="tool-box-logo"
         src={require('../assets/Technologies/logos/reacthooks-logo.png')}

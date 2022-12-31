@@ -32,7 +32,7 @@
   display: flex;
   height: 100vh;
   justify-content: center;
-  margin-top: -4rem;
+  margin-top: -5rem;
   position: relative;
   -webkit-transform: perspective(2000px) rotateX(50deg) scale(1.4) translateY(-50px);
   transform: perspective(2000px) rotateX(50deg) scale(1.5) translateY(-50px);
@@ -43,31 +43,30 @@
 .techno-outer-circle-mandala {
   animation: techno-spin infinite 700s linear;
   opacity: 0.1;
+  width: 150vw;
 }
 
 .techno-inner-circle {
+  /* background-color: blue; */
   border-radius: 50%;
-  height: 200px;
   position: absolute;
-  width: 200px;
+  width: fit-content;
 }
 
 
 .techno-basics-image {
   /* background: linear-gradient(rgba(125, 86, 223, 0.599), rgba(52, 104, 173, 0.597)); */
   border-radius: 50%;
-  margin: 2px 0 0 0;
-  width: 200px;
+  margin: 0.4vh 0 0 0;
+  width: 13vw;
 }
 
 .pics-outer-circle {
-  /* align-items: center; */
   border: 2px solid rgba(255, 255, 255, 0.362);
   border-radius: 50%;
-  height: 520px;
+  height: 34vw;
   position: absolute;
-  /* transform: rotate(23deg); */
-  width: 520px;
+  width: 34vw;
 }
 
 .pics-outer-circle::before {
@@ -91,15 +90,15 @@
   left: 43%;
   position: absolute;
   top: 43%;
-  width: 70px;
+  width: 4.55vw;
 }
 
 .pics-inner-circle {
   border: 2px solid rgba(255, 255, 255, 0.367);
   border-radius: 50%;
-  height: 350px;
+  height: 23vw;
   position: absolute;
-  width: 350px;
+  width: 23vw;
 }
 
 .logo-inner-circle {
@@ -108,53 +107,52 @@
   left: 42%;
   position: absolute;
   top: 42%;
-  width: 60px;
+  width: 3.8vw;
 }
 
-.tool-box {
+.tool-box-logo-container {
   animation: slide 200s ease infinite;
   align-items: center;
   border-style: solid;
-  border-width: 3px;
+  border-width: 0.25vw;
   border-image: linear-gradient(to right, rgba(125, 86, 223, 0.599), rgba(52, 104, 173, 0.597));
   border-image-slice: 1;
-  bottom: 135px;
+  bottom: 9.5vw;
   display: flex;
   flex-direction: row;
   height: 0;
-  padding: 0 20px;
+  padding: 0 2vw;
   position: absolute;
   width: fit-content;
-  /* z-index: 2; */
 }
 
-.tool-box:hover {
+.tool-box-logo-container:hover {
   animation-play-state: paused;
 }
 
 .tool-box-logo {
   border-radius: 20%;
-  bottom: 135px;
-  margin: 0 50px;
-  width: 40px;
+  bottom: 9.5vw;
+  margin: 0 3.25vw;
+  width: 2.6vw;
 }
 
 .techno-tools-chest {
   bottom: 0;
   cursor: pointer;
-  height: 100px;
+  height: 7.5vw;
   position: fixed;
-  right: 300px;
-  width: 150px;
+  right: 18vw;
+  width: 11vw;
 }
 
 .techno-chest-video {
   background-color: transparent;
   bottom: 0;
-  height: 100px;
+  height: 7.5vw;
   position: fixed;
-  right: 300px;
-  width: 150px;
+  right: 18vw;
+  width: 11vw;
 }
 
 .techno-nav-icons {
@@ -165,8 +163,9 @@
   gap: 30px;
   height: 65px;
   left: 0;
-  margin: 0 0 20px 40px;
-  padding: 10px;
+  margin: 0 0 1.5vw 2.5vw;
+  justify-items: center;
+  padding: 0.8vw;
   position: absolute;
   text-align: center;
   width: fit-content;
@@ -176,13 +175,13 @@
   background-color: rgba(255, 255, 255, 0.464);
   border-radius: 50%;
   margin: 5px;
-  width: 50px;
+  width: 3vw;
 }
 
 .techno-nav-icon:hover {
   /* border: 2px double whitesmoke; */
   transform: scale(1.1);
-  padding: 5px;
+  padding: 0.3vw;
 }
 
 .exit-to-menu-button {
@@ -191,8 +190,9 @@
   color: white;
   display: flex;
   flex-direction: column;
+  font-size: 1vw;
   height: fit-content;
-  margin: 0 50px 20px 0;
+  margin: 0 1.5vw 1.5vw 0;
   position: absolute;
   right: 0;
   text-align: center;
@@ -201,7 +201,7 @@
 }
 
 .exit-to-menu-button > img {
-  width: 65px;
+  width: 3.5vw;
 }
 
 .techno-info-box {
