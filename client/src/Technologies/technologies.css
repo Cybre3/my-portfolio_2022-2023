@@ -9,9 +9,9 @@
   height: 100vh;
   justify-items: center;
   overflow: hidden;
-  position: relative;
+  position: fixed;
+  transform-style: preserve-3d;
   width: 100vw;
-  z-index: -5;
 }
 
 #technologies-container::after {
@@ -20,15 +20,11 @@
   bottom: 0;
   height: 100%;
   left: 0;
-  position: absolute;
+  position: fixed;
   right: 0;
   top: 0;
   width: 100%;
-  z-index: -5;
-}
-
-.techno-outer-circle-mandala {
-  opacity: 0.1;
+  z-index: -1;
 }
 
 .tech-circle-container {
@@ -36,17 +32,17 @@
   display: flex;
   height: 100vh;
   justify-content: center;
-  /* margin: 65px 50px 50px; */
+  margin-top: -4rem;
   position: relative;
   -webkit-transform: perspective(2000px) rotateX(50deg) scale(1.4) translateY(-50px);
-  transform: perspective(2000px) rotateX(50deg) scale(1.4) translateY(-50px);
+  transform: perspective(2000px) rotateX(50deg) scale(1.5) translateY(-50px);
   width: 100vw;
-  z-index: 2;
+  /* z-index: 1; */
 }
-
 
 .techno-outer-circle-mandala {
   animation: techno-spin infinite 700s linear;
+  opacity: 0.1;
 }
 
 .techno-inner-circle {
@@ -72,7 +68,6 @@
   position: absolute;
   /* transform: rotate(23deg); */
   width: 520px;
-  /* z-index: 0; */
 }
 
 .pics-outer-circle::before {
@@ -87,7 +82,6 @@
   position: absolute;
   right: 0;
   top: 0;
-  /* z-index: 0; */
 }
 
 .logo-outer-circle {
@@ -108,7 +102,6 @@
   width: 350px;
 }
 
-/* background-color: rgba(0, 0, 0, 0.379); */
 .logo-inner-circle {
   border-radius: 5%;
   display: block;
@@ -132,6 +125,7 @@
   padding: 0 20px;
   position: absolute;
   width: fit-content;
+  /* z-index: 2; */
 }
 
 .tool-box:hover {
@@ -213,13 +207,14 @@
 .techno-info-box {
   background-color: rgba(255, 255, 255, 0.633);
   border-radius: 22%;
+  box-sizing: border-box;
   color: black;
-  height: 220px;
+  height: 340px;
   margin-top: 100px;
   padding: 20px;
   position: absolute;
   text-align: center;
-  width: 170px;
+  width: 240px;
 }
 
 .techno-info-box > h2 {
@@ -233,7 +228,7 @@
 .right {
   border: 10px double rgba(0, 249, 249, 0.601);
   display: none;
-  margin-right: 80px;
+  margin-right: 50px;
   right: 0;
 }
 
@@ -241,14 +236,14 @@
   border: 10px double rgb(198, 142, 0);
   display: none;
   left: 0;
-  margin-left: 80px;
+  margin-left: 50px;
 }
 
 .bottom {
   border: 10px double black;
   bottom: 0;
   display: none;
-  height: 80px;
+  height: 120px;
   padding: 15px;
   width: 450px;
 }
