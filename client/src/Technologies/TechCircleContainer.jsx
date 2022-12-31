@@ -1,7 +1,7 @@
 import React from 'react';
 
-import PicsOuterCircle from './PicsOuterCircle';
-import PicsInnerCircle from './PicsInnerCircle';
+/* import PicsOuterCircle from './PicsOuterCircle';
+import PicsInnerCircle from './PicsInnerCircle'; */
 
 function TechCircleContainer(props) {
   return (
