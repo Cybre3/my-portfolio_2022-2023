@@ -269,73 +269,73 @@
 }
 
 .deg-45 {
-  transform: rotate(45deg) translate(175px) rotate(-45deg);
+  transform: rotate(45deg) translate(11.5vw) rotate(-45deg);
 }
 
 .deg-90 {
-  /* transform: rotate(90deg) translate(175px) rotate(-90deg); */
+  /* transform: rotate(90deg) translate(11.5vw) rotate(-90deg); */
   animation: pic-spin-reverse-deg-90 infinite 100s linear;
 }
 
 .deg-135 {
-  transform: rotate(135deg) translate(175px) rotate(-135deg);
+  transform: rotate(135deg) translate(11.5vw) rotate(-135deg);
 }
 
 .deg-180 {
-  /* transform: rotate(180deg) translate(175px) rotate(-180deg); */
+  /* transform: rotate(180deg) translate(11.5vw) rotate(-180deg); */
   animation: pic-spin-reverse-deg-180 infinite 100s linear;
 }
 
 .deg-225 {
-  transform: rotate(225deg) translate(175px) rotate(-225deg);
+  transform: rotate(225deg) translate(11.5vw) rotate(-225deg);
 }
 
 .deg-270 {
-  /* transform: rotate(272deg) translate(175px) rotate(-272deg); */
+  /* transform: rotate(272deg) translate(11.5vw) rotate(-272deg); */
   animation: pic-spin-reverse-deg-270 infinite 150s linear;
 }
 
 .deg-315 {
-  transform: rotate(315deg) translate(175px) rotate(-315deg);
+  transform: rotate(315deg) translate(11.5vw) rotate(-315deg);
 }
 
 .deg-0-outer {
-  transform: translate(260px) rotate(-23deg);
+  transform: translate(17vw) rotate(-23deg);
   animation: pic-spin-reverse-outer-0 infinite 90s linear;
 }
 
 .deg-45-outer {
-  transform: rotate(45deg) translate(260px) rotate(-68deg);
+  transform: rotate(45deg) translate(17vw) rotate(-68deg);
   animation: pic-spin-reverse-outer-45 infinite 90s linear;
 }
 
 .deg-90-outer {
-  transform: rotate(90deg) translate(260px) rotate(-110deg);
+  transform: rotate(90deg) translate(17vw) rotate(-110deg);
   animation: pic-spin-reverse-outer-90 infinite 90s linear;
 }
 
 .deg-135-outer {
-  transform: rotate(135deg) translate(260px) rotate(-158deg);
+  transform: rotate(135deg) translate(17vw) rotate(-158deg);
   animation: pic-spin-reverse-outer-135 infinite 90s linear;
 }
 
 .deg-180-outer {
-  transform: rotate(179deg) translate(260px) rotate(-200deg);
+  transform: rotate(179deg) translate(17vw) rotate(-200deg);
   animation: pic-spin-reverse-outer-180 infinite 90s linear;
 }
 
 .deg-225-outer {
-  transform: rotate(224deg) translate(260px) rotate(-247deg);
+  transform: rotate(224deg) translate(17vw) rotate(-247deg);
   animation: pic-spin-reverse-outer-225 infinite 90s linear;
 }
 
 .deg-270-outer {
-  transform: rotate(270deg) translate(260px) rotate(-295deg);
+  transform: rotate(270deg) translate(17vw) rotate(-295deg);
   animation: pic-spin-reverse-outer-270 infinite 90s linear;
 }
 
 .deg-315-outer {
-  transform: rotate(315deg) translate(260px) rotate(-338deg);
+  transform: rotate(315deg) translate(17vw) rotate(-338deg);
   animation: pic-spin-reverse-outer-315 infinite 90s linear;
 }
 
@@ -400,108 +400,108 @@
 
 @keyframes pic-spin-reverse-deg-0 {
   0% {
-    transform: rotate(0deg) translate(175px) rotate(0deg);
+    transform: rotate(0deg) translate(11.5vw) rotate(0deg);
   }
   100% {
-    transform: rotate(0deg) translate(175px) rotate(360deg);
+    transform: rotate(0deg) translate(11.5vw) rotate(360deg);
   }
 }
 
 @keyframes pic-spin-reverse-deg-90 {
   0% {
-    transform: rotate(90deg) translate(175px) rotate(-90deg);
+    transform: rotate(90deg) translate(11.5vw) rotate(-90deg);
   }
   100% {
-    transform: rotate(90deg) translate(175px) rotate(90deg);
+    transform: rotate(90deg) translate(11.5vw) rotate(90deg);
   }
 }
 
 @keyframes pic-spin-reverse-deg-180 {
   0% {
-    transform: rotate(180deg) translate(175px) rotate(-180deg);
+    transform: rotate(180deg) translate(11.5vw) rotate(-180deg);
   }
   100% {
-    transform: rotate(180deg) translate(175px) rotate(180deg);
+    transform: rotate(180deg) translate(11.5vw) rotate(180deg);
   }
 }
 
 @keyframes pic-spin-reverse-deg-270 {
   0% {
-    transform: rotate(272deg) translate(175px) rotate(-274deg);
+    transform: rotate(272deg) translate(11.5vw) rotate(-274deg);
   }
   100% {
-    transform: rotate(272deg) translate(175px) rotate(274deg);
+    transform: rotate(272deg) translate(11.5vw) rotate(274deg);
   }
 }
 
 @keyframes pic-spin-reverse-outer-0 {
   0% {
-    transform: rotate(0deg) translate(260px) rotate(-23deg);
+    transform: rotate(0deg) translate(17vw) rotate(-23deg);
   }
   100% {
-    transform: rotate(0deg) translate(260px) rotate(-383deg);
+    transform: rotate(0deg) translate(17vw) rotate(-383deg);
   }
 }
 
 @keyframes pic-spin-reverse-outer-45 {
   0% {
-    transform: rotate(45deg) translate(260px) rotate(-68deg);
+    transform: rotate(45deg) translate(17vw) rotate(-68deg);
   }
   100% {
-    transform: rotate(45deg) translate(260px) rotate(-428deg);
+    transform: rotate(45deg) translate(17vw) rotate(-428deg);
   }
 }
 
 @keyframes pic-spin-reverse-outer-90 {
   0% {
-    transform: rotate(90deg) translate(260px) rotate(-110deg);
+    transform: rotate(90deg) translate(17vw) rotate(-110deg);
   }
   100% {
-    transform: rotate(90deg) translate(260px) rotate(-473deg);
+    transform: rotate(90deg) translate(17vw) rotate(-473deg);
   }
 }
 
 @keyframes pic-spin-reverse-outer-135 {
   0% {
-    transform: rotate(135deg) translate(260px) rotate(-150deg);
+    transform: rotate(135deg) translate(17vw) rotate(-150deg);
   }
   100% {
-    transform: rotate(135deg) translate(260px) rotate(-518deg);
+    transform: rotate(135deg) translate(17vw) rotate(-518deg);
   }
 }
 
 @keyframes pic-spin-reverse-outer-180 {
   0% {
-    transform: rotate(180deg) translate(260px) rotate(-200deg);
+    transform: rotate(180deg) translate(17vw) rotate(-200deg);
   }
   100% {
-    transform: rotate(180deg) translate(260px) rotate(-563deg);
+    transform: rotate(180deg) translate(17vw) rotate(-563deg);
   }
 }
 
 @keyframes pic-spin-reverse-outer-225 {
   0% {
-    transform: rotate(225deg) translate(260px) rotate(-247deg);
+    transform: rotate(225deg) translate(17vw) rotate(-247deg);
   }
   100% {
-    transform: rotate(225deg) translate(260px) rotate(-608deg);
+    transform: rotate(225deg) translate(17vw) rotate(-608deg);
   }
 }
 
 @keyframes pic-spin-reverse-outer-270 {
   0% {
-    transform: rotate(272deg) translate(260px) rotate(-298deg);
+    transform: rotate(272deg) translate(17vw) rotate(-298deg);
   }
   100% {
-    transform: rotate(272deg) translate(260px) rotate(-653deg);
+    transform: rotate(272deg) translate(17vw) rotate(-653deg);
   }
 }
 
 @keyframes pic-spin-reverse-outer-315 {
   0% {
-    transform: rotate(315deg) translate(260px) rotate(-338deg);
+    transform: rotate(315deg) translate(17vw) rotate(-338deg);
   }
   100% {
-    transform: rotate(315deg) translate(260px) rotate(-698deg);
+    transform: rotate(315deg) translate(17vw) rotate(-698deg);
   }
 }
