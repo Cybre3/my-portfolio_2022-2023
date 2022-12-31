@@ -17,7 +17,7 @@ function ProjectsImageContainer(props) {
         }}
         className="intermediate-projects-image"
       >
-        <p className='inter-projs-image-title'>TESTING</p>
+        <p className='inter-projs-image-title'>PROJECT TITLE</p>
       </div>
     </div>
   );

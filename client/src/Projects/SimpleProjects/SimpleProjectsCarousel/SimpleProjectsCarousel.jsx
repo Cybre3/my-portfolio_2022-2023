@@ -6,31 +6,31 @@ function SimpleProjectsCarousel(props) {
     <div className="simple-projects-container">
       <div className="simple-projects-carousel">
         <div className="carousel__face">
-          <span>Testing</span>
+          <span>Welcome</span>
         </div>
         <div className="carousel__face">
-          <span>Out this</span>
+          <span>To Starrika</span>
         </div>
         <div className="carousel__face">
-          <span>Carousel</span>
+          <span>McCloud's</span>
         </div>
         <div className="carousel__face">
-          <span>Thing</span>
+          <span>Fullstack</span>
         </div>
         <div className="carousel__face">
-          <span>for today</span>
+          <span>portfolio</span>
         </div>
         <div className="carousel__face">
-          <span>Hope it works</span>
+          <span>Can you</span>
         </div>
         <div className="carousel__face">
-          <span>Hope it works</span>
+          <span>name all the</span>
         </div>
         <div className="carousel__face">
-          <span>Hope it works</span>
+          <span>gaming</span>
         </div>
         <div className="carousel__face">
-          <span>Hope it works</span>
+          <span>concepts?</span>
         </div>
       </div>
     </div>
