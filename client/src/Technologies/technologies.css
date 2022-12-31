@@ -37,11 +37,11 @@
   justify-content: center;
   /* margin: 65px 50px 50px; */
   position: relative;
-  /* transform: perspective(2000px) rotateX(50deg) scale(1.4) translateY(-50px); */
+  transform: perspective(2000px) rotateX(50deg) scale(1.4) translateY(-50px);
   width: 100vw;
 }
 
-.tech-circle-container::before {
+.pics-outer-circle::before {
   background: url('../assets/background/bluetech-circle.png') center center;
   background-repeat: no-repeat;
   background-size: cover;
