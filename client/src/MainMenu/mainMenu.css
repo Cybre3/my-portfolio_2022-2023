@@ -1,4 +1,4 @@
-#mainPage-container {
+/* #mainPage-container {
   background: url('../assets/Mainpage/background/—Pngtree—dark red abstract smoke cloud_1456489.png') center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -46,7 +46,7 @@
 .mainPage-menuItems {
   display: grid;
   /* grid-template-columns: auto; */
-  grid-template-rows: repeat(auto-fill, auto);
+  /* grid-template-rows: repeat(auto-fill, auto);
   grid-gap: 10px;
   left: 250px;
   position: absolute;
@@ -85,4 +85,15 @@
 .hex-nameBadge {
   left: 175px;
   top: 75px;
+} */ 
+
+.mainmenu {
+  background: url('../assets/background/dark\ background\ images.jpg') center center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  overflow: none;
+  width: 100vw;
 }
+
