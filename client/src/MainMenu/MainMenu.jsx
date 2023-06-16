@@ -1,42 +1,32 @@
 import React from 'react';
 
-/* import hexImage from '../assets/icons/brainIcon.png';
-import HexNameBadge from '../common/HexNameBadge/HexNameBadge';
-import UnderConstruction from './../UnderConstruction/UnderConstruction';
-import MenuItems from './MenuItems'; */
+import MenuSelectItem from './../common/MenuSelectItem';
+
 import './mainMenu.css';
 
-const divSelection = [
-  { section: 'projects', title: 'projects' },
-  { section: 'about me', title: 'about me' },
-  { section: 'contact', title: 'contact' },
-  { section: 'technologies', title: 'technologies' },
-  { section: 'resume', title: 'resume' },
+const menuItems = [
+  { path: '/projects', title: 'Projects' },
+  { path: '/technologies', title: 'Technologies' },
+  { path: '/about-me', title: 'About me' },
+  { path: '/resume', title: 'Resume' },
+  { path: '/contact', title: 'Contact' },
 ];
 
 function MainMenu() {
   return (
-    // <div id="mainPage-container">
-    //   <HexNameBadge
-    //     className="mainPage-hexBadge"
-    //     hexImage={hexImage}
-    //     fullName={'STARRIKA MCCLOUD'}
-    //     role={'Full Stack Developer'}
-    //   />
-    //   <div className="gradient-background"></div>
-    //   <MenuItems />
-    //   {/* <div className="gradient-background2"></div> */}
-    //   <UnderConstruction />
-    // </div>
-    <div className="mainmenu">
-      <div className="main-cards grid grid-cols-1 grid-row-2 w-full w-72 gap-8">
-        <div id="projects" className="card">
-          {' '}
-          <h2 className="uppercase font-bold ml-6 mt-4">projects</h2>
-        </div>
-        <div id="technologies" className="card">
-          {' '}
-          <h2 className="uppercase font-bold ml-6 mt-4">technologies</h2>
+    <div
+      id="mainPage-container"
+      className="fade-in h-screen w-screen bg-test bg-cover bg-center bg-no-repeat font-almendra-sc text-white"
+    >
+      <div className="ml-48 flex h-full w-60 flex-col items-center bg-black text-red-500">
+        <h1 className="mt-20 mb-24 flex flex-col items-center text-3xl font-bold">
+          <span>Starrika</span> <span>McCloud</span>{' '}
+          <span className="whitespace-pre-wrap text-lg">Full  Stack  Developer</span>
+        </h1>
+        <div className="flex h-full w-full flex-col text-center  text-lg">
+          {menuItems.map((item) => (
+            <MenuSelectItem title={item.title} path={item.path} />
+          ))}
         </div>
       </div>
     </div>

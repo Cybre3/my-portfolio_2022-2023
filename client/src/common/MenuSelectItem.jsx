@@ -6,12 +6,18 @@ function MenuSelectItem(props) {
   let [play] = useSound(audio);
 
   return (
-    <NavLink to={props.path} className="menuSelect-item-container" onMouseEnter={() => play()}>
-      <div className="menuSelect-innerText">
-        {props.innerText}
+    <NavLink
+      to={props.path}
+      className="w-full py-2 hover:bg-red-800 border-y-2 border-transparent hover:border-orange-200 hover:text-orange-200"
+      onMouseEnter={() => play()}
+    >
+      <div className="">
+        {props.title}
+        {/* 
         <audio>
           <source src={audio} type="audio/wav" />
-        </audio>
+        </audio> 
+        */}
       </div>
     </NavLink>
   );

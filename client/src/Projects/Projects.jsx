@@ -12,9 +12,9 @@ import './projects.css';
 
 function Projects(props) {
   return (
-    <div id="projects-container">
+    <div id="projects-container" className='fade-in'>
       <div className="nav-menu-container">
-        <NavMenuLink path="/" menuName="HOME" />
+        <NavMenuLink path="/main-menu" menuName="HOME" />
         <NavMenuLink path="/about-me" menuName="ABOUT ME" />
         <NavMenuLink path="/projects" menuName="PROJECTS" />
         <NavMenuLink path="/technologies" menuName="TECHNOLOGIES" />
