@@ -5,7 +5,7 @@ import ProjectsNavbar from './../ProjectsNavbar';
 import ProjectsDescription from '../ProjectsDescription';
 import ProjectsMainMenuItems from '../ProjectsMainMenuItems/ProjectsMainMenuItems';
 import IntermediateProjectsImagesContainer from './IntermediateProjectsImagesContainer/IntermediateProjectsImagesContainer';
-import ExitToMenuButton from './../../Technologies/ExitToMenuButton';
+import ExitToMenuButton from '../../Technologies/solar_system_2D/ExitToMenuButton';
 import ProjectPreview from '../ProjectPreview/ProjectPreview';
 
 import './intermediateProjects.css';

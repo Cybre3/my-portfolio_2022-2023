@@ -5,10 +5,9 @@ import ProjectsNavbar from '../ProjectsNavbar';
 import ProjectsDescription from '../ProjectsDescription';
 import SimpleProjectsCarousel from './SimpleProjectsCarousel/SimpleProjectsCarousel';
 import ProjectsMainMenuItems from './../ProjectsMainMenuItems/ProjectsMainMenuItems';
-import ExitToMenuButton from './../../Technologies/ExitToMenuButton';
+import ExitToMenuButton from '../../Technologies/solar_system_2D/ExitToMenuButton';
 
 import './simpleProjects.css';
-
 
 function SimpleProjects(props) {
   $(document).ready(function () {

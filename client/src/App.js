@@ -3,12 +3,14 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import HomeScreen from './HomeScreen';
 import MainMenu from './MainMenu/MainMenu';
 import Projects from './Projects/Projects';
-import Technologies from './Technologies/Technologies';
+import Technologies from './Technologies/solar_system_3D/Technologies';
 import SimpleProjects from './Projects/SimpleProjects/SimpleProjects';
 import IntermediateProjects from './Projects/IntermediateProjects/IntermediateProjects';
 import CapstoneProjects from './Projects/CapstoneProjects/CapstoneProjects';
 
 import './App.css';
+import Sandbox from './Sandbox';
+import Core from './Technologies/solar_system_3D/Core';
 
 function App() {
  
@@ -26,6 +28,7 @@ function App() {
           <Route path="/technologies" element={<Technologies />} />
           <Route path="/resume" element={<MainMenu />} />
           <Route path="/contact-me" element={<MainMenu />} />
+          <Route path="/sandbox" element={<Sandbox />} />
         </Routes>
       </BrowserRouter>
     </div>
