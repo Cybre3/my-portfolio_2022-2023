@@ -7,10 +7,10 @@ import Technologies from './Technologies/solar_system_3D/Technologies';
 import SimpleProjects from './Projects/SimpleProjects/SimpleProjects';
 import IntermediateProjects from './Projects/IntermediateProjects/IntermediateProjects';
 import CapstoneProjects from './Projects/CapstoneProjects/CapstoneProjects';
+import Sandbox from './Sandbox';
 
 import './App.css';
-import Sandbox from './Sandbox';
-import Core from './Technologies/solar_system_3D/Core';
+// import Core from './Technologies/solar_system_3D/Core';
 
 function App() {
  
