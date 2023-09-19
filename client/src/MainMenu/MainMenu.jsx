@@ -3,7 +3,6 @@ import React from 'react';
 import MenuSelectItem from './../common/MenuSelectItem';
 
 import './mainMenu.css';
-import { NavLink } from 'react-router-dom';
 
 const menuItems = [
   { path: '/projects', title: 'Projects' },
