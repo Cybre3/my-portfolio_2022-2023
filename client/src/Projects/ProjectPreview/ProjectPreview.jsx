@@ -1,5 +1,6 @@
 import React from 'react';
 import video from '../../assets/video/whiteTv-video.mp4';
+
 import './projectPreview.css';
 
 function ProjectPreview(props) {

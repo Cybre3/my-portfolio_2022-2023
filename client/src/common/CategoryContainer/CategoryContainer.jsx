@@ -8,7 +8,7 @@ function CategoryContainer(props) {
       <h1 className="category-title">{props.title}</h1>
       <div className="category-description-container">
         <p className="category-description-text">
-          some type of description down below to add about projects.
+          {props.description}
         </p>
       </div>
       <img className="category-background" src={props.categoryPic} alt="" />

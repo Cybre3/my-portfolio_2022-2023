@@ -185,7 +185,7 @@
 }
 
 .exit-to-menu-button {
-  align-items: center;
+  /* align-items: center;
   bottom: 0;
   color: white;
   display: flex;
@@ -197,12 +197,12 @@
   right: 0;
   text-align: center;
   text-decoration: none;
-  width: fit-content;
+  width: fit-content; */
 }
 
-.exit-to-menu-button > img {
+/* .exit-to-menu-button > img {
   width: 3.5vw;
-}
+} */
 
 .techno-info-box {
   background-color: rgba(255, 255, 255, 0.633);

@@ -42,9 +42,11 @@
 
 .simple-projects-title-description {
   display: none;
-  margin: 175px 0 0 75px;
+  margin: 175px 75px 0 0;
   position: absolute;
+  color:white;
   text-align: left;
+  right: 0;
 }
 
 .simple-projects-title-description > h2 {

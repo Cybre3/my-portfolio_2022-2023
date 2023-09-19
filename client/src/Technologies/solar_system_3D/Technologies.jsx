@@ -5,6 +5,8 @@ import { BackSide, RepeatWrapping, TextureLoader, Vector3 } from 'three';
 
 // import stars from '../assets/background/wp2694502-gaming-background (1).jpg';
 /* import starsPurple from '../../assets/Technologies/background/graham-holtshausen-fUnfEz3VLv4-unsplash.jpg'; */
+import Station from './Station';
+
 import starsBlack from '../../assets/Technologies/background/blackStarField.png';
 import goldEmblem from '../../assets/Technologies/techno-mandala.png';
 import reactLogo from '../../assets/Technologies/logos/react-logo.png';
@@ -17,7 +19,7 @@ import jQueryLogo from '../../assets/Technologies/logos/jquery-logo.png';
 import mochaLogo from '../../assets/Technologies/logos/mocha-logo.png';
 import fundamentalsLogo from '../../assets/Technologies/html-css-js-logo.png';
 import metalTexture from '../../assets/Technologies/textures/goldSlats.png';
-import Station from './Station';
+
 
 function Technologies(props) {
   return (

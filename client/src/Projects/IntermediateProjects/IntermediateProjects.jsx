@@ -30,10 +30,10 @@ function IntermediateProjects(props) {
     <div className="intermediate-projects-container">
       <h1 className="intermediate-projects-heading">PROJECTS</h1>
       <ProjectsNavbar />
-      <ProjectsDescription />
+      <ProjectsDescription styles={'text-black'} />
       <ProjectPreview />
       <IntermediateProjectsImagesContainer />
-      <ProjectsMainMenuItems />
+      <ProjectsMainMenuItems styles={'!flex !flex-col !space-y-4 absolute top-48 left-32'} />
       <ExitToMenuButton />
     </div>
   );

@@ -39,7 +39,7 @@ function Sandbox(props) {
         >
           <orthographicCamera attach="shadow-camera" args={[-10, 10, 10, -10]} />
         </directionalLight> */}
-        {/*    <spotLight
+           <spotLight
           color="white"
           position={[-45, 50, -25]}
           intensity={1}
@@ -47,7 +47,7 @@ function Sandbox(props) {
           castShadow
           angle={45}
           distance={200}
-        /> */}
+        />
         <spotLight
           color="red"
           position={[90, -65, 0]}
@@ -57,7 +57,7 @@ function Sandbox(props) {
           angle={100}
           distance={250}
         />
-        {/*   <spotLight
+          <spotLight
           color="white"
           position={[0, 15, -5]}
           intensity={1}
@@ -66,8 +66,8 @@ function Sandbox(props) {
           penumbra={1}
           angle={35}
           distance={75}
-        /> */}
-        {/*  <spotLight
+        />
+         <spotLight
           color="white"
           position={[-20, -20, 25]}
           intensity={1}
@@ -75,7 +75,7 @@ function Sandbox(props) {
           castShadow
           angle={85}
           distance={200}
-        /> */}
+        />
       </>
     );
   };
@@ -324,19 +324,19 @@ function Core() {
           >
             <meshStandardMaterial color="red" side={DoubleSide} />
           </Cylinder>
-          <Cylinder args={[0.2, 0.4, 1.5, 2, 11, false, 2.4, 1.4]} position={[0, 2.1, -2.1]}>
+          <Cylinder args={[0.2, 0.4, 2.3, 2, 11, false, 2.3, 1.4]} position={[0, 2.3, -1.8]} rotation={[0.4, 0, 0]}>
             <meshStandardMaterial color="red" side={DoubleSide} />
           </Cylinder>
-          <Cylinder args={[0.2, 0.4, 1.5, 2, 11, false, 3.1, 1.4]} position={[-1.23, 2.1, -1.7]}>
+          <Cylinder args={[0.2, 0.4, 2.3, 2, 11, false, 3, 1.4]} position={[-1, 2.3, -1.4]} rotation={[0.35, 0, -0.25]}>
             <meshStandardMaterial color="red" side={DoubleSide} />
           </Cylinder>
-          <Cylinder args={[0.2, 0.4, 1.5, 2, 11, false, 3.7, 1.4]} position={[-2, 2.1, -0.65]}>
+          <Cylinder args={[0.2, 0.4, 2.3, 2, 11, false, 3.6, 1.4]} position={[-1.7, 2.3, -0.55]} rotation={[0.1, 0, -0.35]}>
             <meshStandardMaterial color="red" side={DoubleSide} />
           </Cylinder>
-          <Cylinder args={[0.2, 0.4, 1.5, 2, 11, false, 4.3, 1.4]} position={[-2, 2.1, 0.65]}>
+          <Cylinder args={[0.2, 0.4, 2.3, 2, 11, false, 4.3, 1.4]} position={[-1.7, 2.3, 0.5]} rotation={[-0.15, 0, -0.35]}>
             <meshStandardMaterial color="red" side={DoubleSide} />
           </Cylinder>
-          <Cylinder args={[0.2, 0.4, 1.5, 2, 11, false, 4.9, 1.4]} position={[-1.23, 2.1, 1.7]}>
+          <Cylinder args={[0.2, 0.4, 2.3, 2, 11, false, 5, 1.4]} position={[-1.05, 2.3, 1.45]} rotation={[-0.35, 0, -0.25]}>
             <meshStandardMaterial color="red" side={DoubleSide} />
           </Cylinder>
         </Cylinder>

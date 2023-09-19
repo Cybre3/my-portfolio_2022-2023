@@ -4,7 +4,7 @@ import './projectsMainMenuItems.css';
 
 function ProjectsMainMenuItems(props) {
   return (
-    <div className="projects-main-menu-items">
+    <div className={`projects-main-menu-items ${props.styles}`}>
       <NavLink to="/about-me">ABOUT ME</NavLink>
       <NavLink to="/projects">PROJECTS</NavLink>
       <NavLink to="/technologies">TECHNOLOGIES</NavLink>

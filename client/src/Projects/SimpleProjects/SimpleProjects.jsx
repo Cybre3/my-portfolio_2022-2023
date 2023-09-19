@@ -25,11 +25,11 @@ function SimpleProjects(props) {
     <div className="simple-projects-background">
       <h1 className="simple-projects-heading">PROJECTS</h1>
       <ProjectsNavbar />
-      <ProjectsDescription />
+      <ProjectsDescription styles={'!text-black'} styleDescription={'!border-black'} />
       <div className="project-preview"></div>
       <SimpleProjectsCarousel />
-      <ProjectsMainMenuItems />
-      <ExitToMenuButton />
+      <ProjectsMainMenuItems styles={'!flex !flex-col !space-y-4 absolute top-48 left-32'} />
+      <ExitToMenuButton styles={'text-black'} />
     </div>
   );
 }

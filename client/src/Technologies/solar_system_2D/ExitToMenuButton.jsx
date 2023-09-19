@@ -3,13 +3,13 @@ import { NavLink } from 'react-router-dom';
 
 function ExitToMenuButton(props) {
   return (
-    <NavLink className="exit-to-menu-button" to="/">
+    <NavLink className={`absolute w-fit bottom-6 right-4 flex flex-col items-center ${props.styles}`} to="/main-menu">
       <img
-        className="techno-nav-icon"
+        className="w-10"
         src={require('../../assets/Technologies/icons/backtomenu-icon.png')}
         alt=""
       />
-      <div className="techno-nav-text">BACK TO MENU</div>
+      <div className="text-sm">BACK TO MENU</div>
     </NavLink>
   );
 }

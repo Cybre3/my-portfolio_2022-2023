@@ -10,9 +10,30 @@ import purpleDragon from '../assets/ProjectContainer/background/black-dragon-bre
 
 import './projects.css';
 
+const categoryDescription = [
+  {
+    title: 'SIMPLE',
+    linkTo: '/projects/simple-projects',
+    categoryPic: simpleDragon,
+    description: '100 lines of code or less. Vanilla JavaScript, no libraries, small tooling apps',
+  },
+  {
+    title: 'INTERMEDIATE',
+    linkTo: '/projects/intermediate-projects',
+    categoryPic: intermediateDragon,
+    description: '100 lines of code or more. Some libraries, frameworks and backend services.',
+  },
+  {
+    title: 'CAPSTONE',
+    linkTo: '/projects/capstone-projects',
+    categoryPic: purpleDragon,
+    description: `Full JavaScript MERN Stack projects. Libraries, frontend and backend services.`,
+  },
+];
+
 function Projects(props) {
   return (
-    <div id="projects-container" className='fade-in'>
+    <div id="projects-container" className="fade-in">
       <div className="nav-menu-container">
         <NavMenuLink path="/main-menu" menuName="HOME" />
         <NavMenuLink path="/about-me" menuName="ABOUT ME" />
@@ -23,21 +44,15 @@ function Projects(props) {
         <NavMenuLink path="/interests" menuName="INTERESTS" />
       </div>
       <div className="project-category-container">
-        <CategoryContainer
-          categoryPic={simpleDragon}
-          title="SIMPLE"
-          linkTo="/projects/simple-projects"
-        />
-        <CategoryContainer
-          categoryPic={intermediateDragon}
-          title="INTERMEDIATE"
-          linkTo="/projects/intermediate-projects"
-        />
-        <CategoryContainer
-          categoryPic={purpleDragon}
-          title="CAPSTONE"
-          linkTo="/projects/capstone-projects"
-        />
+        {categoryDescription.map((item) => (
+          <CategoryContainer
+            key={item.title}
+            categoryPic={item.categoryPic}
+            title={item.title}
+            linkTo={item.linkTo}
+            description={item.description}
+          />
+        ))}
       </div>
       <div className="project-name-display">
         <ProjectNameDisplay />
